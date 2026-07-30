@@ -1,9 +1,8 @@
-export const generateHouse = (req, res) => {
-  const { prompt } = req.body;
+import requirements from "../data/requirements.js";
+import { generateHouse } from "../services/houseGenerator.js";
 
-  res.json({
-    success: true,
-    message: "Prompt received successfully",
-    prompt,
-  });
+export const generateHouseController = (req, res) => {
+  const house = generateHouse(requirements);
+
+  res.json(house);
 };

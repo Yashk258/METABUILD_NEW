@@ -1,0 +1,18 @@
+const requirements = {
+  plot: {
+    width: 30,
+    length: 40,
+  },
+  rooms: {
+    bedrooms: 2,
+    bathrooms: 2,
+    kitchen: 1,
+    livingRoom: 1,
+    dining: 1,
+  },
+  style: "Modern",
+  parking: true,
+  garden: false,
+};
+
+export default requirements;

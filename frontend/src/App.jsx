@@ -1,7 +1,5 @@
-import Scene from "./components/Scene";
+import Dashboard from "./pages/Dashboard";
 
-function App() {
-  return <Scene />;
+export default function App() {
+  return <Dashboard />;
 }
-
-export default App;

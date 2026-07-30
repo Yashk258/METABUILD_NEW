@@ -1,8 +1,9 @@
 import express from "express";
-import { generateHouse } from "../controllers/houseController.js";
+import { generateHouseController } from "../controllers/houseController.js";
 
 const router = express.Router();
 
-router.post("/generate", generateHouse);
+router.get("/generate", generateHouseController);
+router.post("/generate", generateHouseController);
 
 export default router;
